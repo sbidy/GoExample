@@ -21,7 +21,7 @@ func main()  {
         for i := 0; i < 2; i++ {
             fmt.Println(<- dbconnection)
         }
-        avarage = avarage + (int(time.Since(start))/(1000*1000))
+        average = average + (int(time.Since(start))/(1000*1000))
         fmt.Println("  Next try")
     }
     fmt.Print("Time in MS: ")
